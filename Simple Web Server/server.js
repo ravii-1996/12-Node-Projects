@@ -3,7 +3,7 @@
 const http = require('http');   
 const fs =require('fs');
 const path = require('path');  //  path import to get the extension which will entered in url 
-
+const url = require('url');
 const port = "1899";
 
 
@@ -20,13 +20,14 @@ const contentTypes = {
 http.createServer((req, res)=>{
 
   if(req.url!='/favicon.ico'){    // this condition used to avoid extra req which was sent by browser...
+    let filename= url.parse(req.url).pathname;
     res.writeHead(200,{'Content-type' : 'text/plain'});   // define which typeof data is pass in res
     
     let ext= path.extname(req.url); // get extension
     
     if(ext!=="" && ext != null){
-
-     let readStream=fs.createReadStream('index.html');  // create read stream and send that to write stream of http res.
+     filename= path.basename(filename);
+     let readStream=fs.createReadStream(filename);  // create read stream and send that to write stream of http res.
      readStream.on('data', (chunk)=>{
        res.writeHead(200,{'Content-Tyype' : ext});
        res.write(chunk);
