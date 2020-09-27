@@ -1,16 +1,12 @@
-##What I did
+**What I did**
 
 - Fetch some book data from Google API (Used Unirest)
-- Create Schema to store all those data into db. (Used MongoDB)
+- Create Schema to store all those data into db. (Used MongoDB Atlas)
 - Create view to enter the book name. (Using Get Htttp protocall)
 - Fetch that particular data from DB entered by user (Book Title). If data is not prsesnt send a message to User Book is not added to repository.
 - Render particular book details if it prsesnt along with review.
 
-** Comments added in the code for better understanding.
-** Screenshot attach in the screenshot folder.
-
-**IMPORTANT**
-##Book Present In DB:
+**Book Present In DB**
 
 - Core Java(Tm) Volume 1-Fundamentals, 8/E
 - Java NIO \c Ron Hitchens
@@ -24,4 +20,9 @@
 - Java in a Time of Revolution
 
 
-** Github Url: 
+**Github Url**
+- https://github.com/ravii-1996/12-Node-Projects/tree/master/BookApi
+
+
+**Comments added in the code for better understanding**
+**Screenshot attach in the screenshot folder**
