@@ -28,5 +28,12 @@
 - DB_URI=mongodb+srv://Ravii_1996:Qwerty%2397@cluster0-r98r8.mongodb.net/book
 - API_KEY=AIzaSyAuDXUla1aOTjwIRklDKb_vc3hD29z2Zc0
 
+**Running Steps**
+- 1. Clone Project
+- 2. Run npm install (If node is already downloaded)
+- 3. Change DB_URI & API_KEY in code. We are currently using .env file.So change it accordingly.
+- 4. Go the Bookapi path in terminal.
+- 5. Run command "node server.js"
+
 **Comments added in the code for better understanding**
 **Screenshot attach in the screenshot folder**
