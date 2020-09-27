@@ -1,0 +1,23 @@
+<%- include('home')%>
+
+<!-- Show Selected Book Details -->
+<div style="background-color: whitesmoke; text-align: center;">
+  <% if(book){%>
+  <div class="row">
+    <div class="col-6">
+      <img style="border: 5px solid rgb(0, 0, 0);"src="<%= book.volumeInfo.imageLinks.smallThumbnail %>" alt="Girl in a jacket">
+    </div>
+    <div style="text-align: left;" class="col-6">
+      <h4 style="color: blueviolet;"><%=book.volumeInfo.title%> <small>(<%=book.volumeInfo.publishedDate%>)</small></h4>
+      <p>Author : <small><%=book.volumeInfo.authors.toString()%></small></p>
+      <p>Rating : <small><%=book.volumeInfo.averageRating%></small></p>
+      <p>Publisher : <small><%=book.volumeInfo.publisher%></small></p>
+      <p>Total Pages : <small><%=book.volumeInfo.pageCount%></small></p>
+      <p>Language : <small><%=book.volumeInfo.language%></small></p>
+      
+    </div>
+  </div>
+  <% } else{%>
+    <h4 style="padding-top: 10%;">Book is not present in our repository!!</h4>
+  <%}%>
+</div>
