@@ -2,8 +2,8 @@
 
 - Fetch some book data from Google API (Used Unirest)
 - Create Schema to store all those data into db. (Used MongoDB Atlas)
-- Create view to enter the book name. (Using Get Htttp protocall)
-- Fetch that particular data from DB entered by user (Book Title). If data is not prsesnt send a message to User Book is not added to repository.
+- Create view to enter the book name. (Using Get Http protocol)
+- Fetch that particular data from DB entered by user (Book Title). If data is not prsesnt send a message to User "Book is not added to repository".
 - Render particular book details if it prsesnt along with review.
 
 **Book Present In DB**
