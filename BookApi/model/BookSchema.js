@@ -1,5 +1,7 @@
 const mongoose = require('mongoose');
-mongoose.connect("mongodb+srv://Ravii_1996:Qwerty%2397@cluster0-r98r8.mongodb.net/book" , { useNewUrlParser: true, useUnifiedTopology: true });
+const dotenv = require('dotenv').config();
+
+mongoose.connect(process.env.DB_URI, { useNewUrlParser: true, useUnifiedTopology: true });
 var Schema = mongoose.Schema;
 const conn = mongoose.connection;
 

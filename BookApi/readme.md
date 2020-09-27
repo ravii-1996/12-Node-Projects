@@ -24,5 +24,9 @@
 - https://github.com/ravii-1996/12-Node-Projects/tree/master/BookApi
 
 
+**Credentials For Testing Purpose**
+- DB_URI=mongodb+srv://Ravii_1996:Qwerty%2397@cluster0-r98r8.mongodb.net/book
+- API_KEY=AIzaSyAuDXUla1aOTjwIRklDKb_vc3hD29z2Zc0
+
 **Comments added in the code for better understanding**
 **Screenshot attach in the screenshot folder**

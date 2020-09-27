@@ -1,10 +1,10 @@
 const express = require('express');
 const bodyparser = require('body-parser');
 const unirest = require('unirest');
+
 var app = express();
 
 // API Details 
-API_KEY="AIzaSyAuDXUla1aOTjwIRklDKb_vc3hD29z2Zc0"
 API_URL="https://www.googleapis.com/books/v1/volumes?q=java"
 
 const Books = require('./model/BookSchema');
@@ -19,7 +19,7 @@ app.use(bodyparser.urlencoded({ extended: false }));
 // we are using unirest here to fetch book data through google api.
 // pass api key in header for authorization.
 unirest.get(API_URL)
-  .header("Api-key", API_KEY)
+  .header("Api-key", process.env.API_KEY)
   .end(function (result) {
     /**
      * after getting the result save into the DB
